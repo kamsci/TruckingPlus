@@ -7,6 +7,7 @@ import { JobItemComponent } from './job-item/job-item.component';
 @Component({
     selector: 'cl-job-list',
     templateUrl: './job-list.template.html',
+    styleUrls: ['./job-list.style.css'],
     providers: [ JobItemComponent ]
 })
 export class JobListComponent implements OnInit{
@@ -25,5 +26,10 @@ export class JobListComponent implements OnInit{
                     this.jobService.jobs = jobs;
                 }
             )
+    }
+
+    onSelected(job: Job) {
+        console.log("JobList emited", job);
+        this.jobSelected.emit(job);
     }
 }
