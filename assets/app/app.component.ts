@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 
+import { JobsComponent } from './jobs/jobs.component';
+
 @Component({
-    selector: 'my-app',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    selector: 'cl-app',
+    templateUrl: './app.template.html',
+    styleUrls: ['./app.component.css'],
+    providers: [ JobsComponent ]
 })
 export class AppComponent {
 
