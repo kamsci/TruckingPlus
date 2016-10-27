@@ -14,7 +14,7 @@ export class JobService {
     constructor(private http: Http) {};
 
     getJobs(){
-        return this.http.get('http://localhost:3000/jobs')
+        return this.http.get('http://localhost:3000/job-data')
             .map(response  => {
                 const data = response.json().result;
                 let jobArray: any[] = [];

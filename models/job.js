@@ -12,8 +12,8 @@ var jobSchema = new Schema({
         arrivalTime: { type: Date },
         address: { type: String },
         picture: { type: String },
-        ladingReceived?: { type: Date },
-        ladingSigned?: { type: Date }
+        ladingReceived: { type: Date },
+        ladingSigned: { type: Date }
     }]
 });
 
