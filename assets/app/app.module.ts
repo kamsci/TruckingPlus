@@ -4,14 +4,16 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-// import { JobListComponent } from './jobs/job-list/job-list.component';
+import { JobListComponent } from './jobs/job-list/job-list.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { JobTasksComponent } from './jobs/job-tasks/job-tasks.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        // JobListComponent,
-        JobsComponent
+        JobListComponent,
+        JobsComponent,
+        JobTasksComponent
     ],
     imports: [
         BrowserModule, 
