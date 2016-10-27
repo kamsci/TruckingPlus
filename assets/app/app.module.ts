@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { JobListComponent } from './jobs/job-list/job-list.component';
+import { JobItemComponent } from './jobs/job-list/job-item/job-item.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { JobTasksComponent } from './jobs/job-tasks/job-tasks.component';
 
@@ -12,6 +13,7 @@ import { JobTasksComponent } from './jobs/job-tasks/job-tasks.component';
     declarations: [
         AppComponent,
         JobListComponent,
+        JobItemComponent,
         JobsComponent,
         JobTasksComponent
     ],
