@@ -24,8 +24,10 @@ export class JobListComponent implements OnInit{
                 jobs => {
                     this.jobs = jobs;
                     this.jobService.jobs = jobs;
+                    this.jobSelected.emit(jobs[0]);
                 }
             )
+       
     }
 
     onSelected(job: Job) {

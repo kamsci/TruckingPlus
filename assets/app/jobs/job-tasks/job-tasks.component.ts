@@ -14,7 +14,7 @@ export class JobTasksComponent implements OnInit {
         console.log(this)
     }
     pickupPhoto() {
-        
+
     }
     ladingRecieved() {
         console.log("ladingRecieved")
