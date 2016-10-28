@@ -1,12 +1,12 @@
 <div class="row">
   <!--List all jobs-->
-  <div class="col-sm-5">
+  <div class="col-sm-6">
     <h3>List</h3>
     <!--Listen for jobs-list event emitter-->
     <cl-job-list (jobSelected)="selectedJob = $event"></cl-job-list>
   </div>
   <!--List Loaded job-->
-  <div class="col-sm-7">
+  <div class="col-sm-6">
     <h3>Details</h3>
     <cl-job-tasks [selectedJob]="selectedJob"></cl-job-tasks>
   </div>

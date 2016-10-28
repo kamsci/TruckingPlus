@@ -12,10 +12,5 @@ import { JobTasksComponent } from './job-tasks/job-tasks.component';
 export class JobsComponent {
     selectedJob: Job;
 
-    constructor() {
-        console.log("JobCom", this.selectedJob);
-    }
-
-
 
 }

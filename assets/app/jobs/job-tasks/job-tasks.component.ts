@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { Job } from '../job.model';
 
@@ -6,10 +6,14 @@ import { Job } from '../job.model';
     selector: 'cl-job-tasks',
     templateUrl: './job-tasks.template.html'
 })
-export class JobTasksComponent {
+export class JobTasksComponent implements OnInit {
     @Input() selectedJob: Job;
 
-    constructor() {
-        console.log(this.selectedJob);
+    ngOnInit() {
+        console.log(this)
+    }
+
+    print() {
+        console.log(this)
     }
 }
