@@ -7,10 +7,21 @@ import { JobTasksComponent } from './job-tasks/job-tasks.component';
 @Component({
     selector: 'cl-jobs',
     templateUrl: './jobs.template.html',
+    styleUrls: ['./jobs.style.css'],
     providers: [ JobListComponent, JobTasksComponent ]
 })
 export class JobsComponent {
     selectedJob: Job;
 
+    // allFilter() {
 
+    // }
+
+    // activeFilter() {
+
+    // }
+
+    // completeFilter() {
+
+    // }
 }

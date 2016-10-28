@@ -1,8 +1,61 @@
 <div class="row">
   <div class="col-xs-12">
-    <h4 (click)="print()">Job Tasks Checklist</h4>
-    <div ng-if="selectedJob">
-      <h1>Hit If</h1>
-      {{ selectedJob?.title }}
-    </div>
+    <h3>{{ selectedJob?.title }}</h3>
+</div>
+
+<div class="row">
+  <div class="col-xs-4">
+    <label class="label">Reference ID:</label>
   </div>
+  <div class="col-xs-7">
+    <p>{{ selectedJob?.referenceId }}</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-4">
+    <label class="label">Description</label>
+  </div>
+  <div class="col-xs-7">
+    <p>{{ selectedJob?.stops[0].cargoDescription }}</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-xs-4">
+    <h4 class="h4">Pickup</h4>
+  </div>
+    <div class="col-xs-7">
+    <p>{{ selectedJob?.stops[0].arrivalTime | date : 'short' }}</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-4">
+    <label class="label">Address</label>
+  </div>
+    <div class="col-xs-7">
+    <p>{{ selectedJob?.stops[0].address }}</p>
+  </div>
+</div>
+
+<div class="row task-box">
+  <div class="col-xs-12">
+    <form>
+      <div class="checkbox">
+        <label>
+            <input type="checkbox" (click)="pickupPhoto()">
+            Photo uploaded
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" (click)="ladingRecieved()">
+          Bill of Lading - received
+        </label>
+      </div>
+    </form>
+  </div>
+</div>

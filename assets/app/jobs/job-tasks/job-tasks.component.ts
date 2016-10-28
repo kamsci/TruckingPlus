@@ -4,7 +4,8 @@ import { Job } from '../job.model';
 
 @Component({
     selector: 'cl-job-tasks',
-    templateUrl: './job-tasks.template.html'
+    templateUrl: './job-tasks.template.html',
+    styleUrls: [ './job-tasks.style.css' ]
 })
 export class JobTasksComponent implements OnInit {
     @Input() selectedJob: Job;
@@ -12,8 +13,10 @@ export class JobTasksComponent implements OnInit {
     ngOnInit() {
         console.log(this)
     }
-
-    print() {
-        console.log(this)
+    pickupPhoto() {
+        
+    }
+    ladingRecieved() {
+        console.log("ladingRecieved")
     }
 }

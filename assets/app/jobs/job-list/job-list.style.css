@@ -1,14 +1,20 @@
+.list-group {
+    background-color: #428bca;
+}
 li {
     list-style: none;
     /*font-size: 16px;*/
 }
 h4 {
     border: 2px solid darkslategray;
+    color: #E0E6EA;
     padding: 15px 15px;
     margin: 0px 0px;
 }
 h4:hover {
     cursor: pointer;
     font-weight: bold;
+    background-color: white;
+    color: #428bca;
     font-size: 18px;
 }
